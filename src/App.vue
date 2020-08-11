@@ -6,6 +6,7 @@
     <Skills />
     <Experience />
     <Education />
+    <Html />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
+import Html from "./components/Html";
 export default {
   name: "App",
   components: {
@@ -25,6 +27,7 @@ export default {
     Skills,
     Experience,
     Education,
+    Html,
   },
   data() {
     return {};

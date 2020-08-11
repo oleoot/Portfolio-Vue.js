@@ -209,8 +209,19 @@ a {
     width: 90%;
 }
 
-/* Experience section ============================================================================= */
+/* Html section ============================================================================= */
+.html .container:nth-child(2) {
+    max-width: 1410px;
+}
 
+.html__slider-wrap {
+    margin-top: 80px;
+    position: relative;
+}
+
+.html .tns-slider {
+    padding: 30px;
+}
 
 /* Utility classes ======================================================================================== */
 section {
@@ -305,4 +316,85 @@ section {
     font-size: 20px;
     font-weight: 500;
     margin-left: 30px;
+}
+
+.project {
+    width: 347px !important;
+    height: 500px;
+    position: relative;
+    display: block;
+}
+
+.project__inner {
+    width: calc(100% - 40px);
+    height: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.project__inner:hover {
+    transform: scale(1.05);
+}
+
+.boostfolia {
+    background: url(../img/projects/html-css/boostfolia/boostfolia-bg.png) center/cover;
+}
+
+.snow {
+    background: url(../img/projects/html-css/snow/snow-bg.png) center/cover;
+}
+
+.freehand {
+    background: url(../img/projects/html-css/Freehand/freehand-bg.png) center/cover;
+}
+
+.dance-tour {
+    background: url(../img/projects/html-css/dance-tour/dance-tour-bg.jpg) center/cover;
+}
+
+.project__circle-wrap {
+    position: absolute;
+    display: flex;
+    right: 20px;
+    top: 20px;
+}
+
+.project__circle {
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.project__circle img {
+    width: 32px;
+}
+
+.project__name {
+    position: absolute;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 35px;
+    bottom: 20px;
+    left: 20px;
+}
+
+.slider-controls {
+    position: absolute;
+    right: 35px;
+    top: -120px;
+}
+
+
+.slider__arrow {
+    outline: none;
+    cursor: pointer;
+    width: 120px;
+    height: 60px;
 }
