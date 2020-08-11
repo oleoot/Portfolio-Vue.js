@@ -5,6 +5,7 @@
     <About />
     <Skills />
     <Experience />
+    <Education />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import MainScreen from "./components/MainScreen";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
+import Education from "./components/Education";
 export default {
   name: "App",
   components: {
@@ -22,6 +24,7 @@ export default {
     About,
     Skills,
     Experience,
+    Education,
   },
   data() {
     return {};

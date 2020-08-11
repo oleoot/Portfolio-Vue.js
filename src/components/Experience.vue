@@ -4,8 +4,8 @@
       <div class="section-headline">
         <h2 class="section-headline__text">Опыт работы</h2>
         <div>
-          <a href="#" class="experience__link">Goodwine</a>
-          <a href="#" class="experience__link">GFK</a>
+          <a href="#" class="reference__link">Goodwine</a>
+          <a href="#" class="reference__link">GFK</a>
         </div>
       </div>
       <div class="type-wrap">
