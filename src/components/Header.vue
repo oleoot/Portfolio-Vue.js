@@ -9,22 +9,22 @@
       <div class="header__right">
         <ul class="header__list">
           <li class="header__list-item">
-            <a href="#" class="header__link">About</a>
+            <a href="#" class="header__link">Обо мне</a>
           </li>
           <li class="header__list-item">
-            <a href="#" class="header__link">Skills</a>
+            <a href="#" class="header__link">Навыки</a>
           </li>
           <li class="header__list-item">
-            <a href="#" class="header__link">Experience</a>
+            <a href="#" class="header__link">Опыт работы</a>
           </li>
           <li class="header__list-item">
-            <a href="#" class="header__link">Education</a>
+            <a href="#" class="header__link">Образование</a>
           </li>
           <li class="header__list-item">
-            <a href="#" class="header__link">Work</a>
+            <a href="#" class="header__link">Проекты</a>
           </li>
           <li class="header__list-item">
-            <a href="#" class="header__link">Certificates</a>
+            <a href="#" class="header__link">Сертификаты</a>
           </li>
         </ul>
       </div>

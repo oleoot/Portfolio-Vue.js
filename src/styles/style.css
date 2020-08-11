@@ -96,10 +96,50 @@ a {
         bottom: 10px;
     }
 } */
+/* About section ============================================================================= */
+.about {
+    padding: 150px;
+}
+
+.about__info-container {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    margin-top: 70px;
+}
+
+.about__info {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 45px;
+}
+
+.about__img {
+    width: 30px;
+    margin-left: 20px;
+}
+
+.about .section-headline__icons {
+    display: flex;
+    align-items: center;
+}
 
 /* Utility classes ======================================================================================== */
 .container {
     width: 100%;
     margin: 0 auto;
-    max-width: 1150px;
+    max-width: 1350px;
+}
+
+.section-headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-headline__text {
+    color: var(--primary-color);
+    font-size: 40px;
+    font-weight: 500;
 }

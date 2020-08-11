@@ -2,17 +2,20 @@
   <div id="app">
     <Header />
     <MainScreen />
+    <About />
   </div>
 </template>
 
 <script>
 import Header from "./components/Header";
 import MainScreen from "./components/MainScreen";
+import About from "./components/About";
 export default {
   name: "App",
   components: {
     Header,
     MainScreen,
+    About,
   },
   data() {
     return {};
