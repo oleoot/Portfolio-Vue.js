@@ -7,6 +7,7 @@
     <Experience />
     <Education />
     <Html />
+    <!-- <JavaScript /> -->
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Html from "./components/Html";
+// import JavaScript from "./components/JavaScript";
 export default {
   name: "App",
   components: {
@@ -28,6 +30,7 @@ export default {
     Experience,
     Education,
     Html,
+    // JavaScript,
   },
   data() {
     return {};

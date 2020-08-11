@@ -215,7 +215,7 @@ a {
 }
 
 .html__slider-wrap {
-    margin-top: 80px;
+    margin-top: 30px;
     position: relative;
 }
 
@@ -263,6 +263,42 @@ section {
     padding-right: 50px;
 }
 
+.type-wrap__inner {
+    background: rgba(0, 0, 0, 0.15);
+    padding: 40px 50px 50px;
+    border-radius: 20px;
+    margin-top: -6px;
+    position: relative;
+}
+
+.shape-1 {
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    z-index: -1;
+}
+
+.shape-2 {
+    position: absolute;
+    top: -90px;
+    right: 50px;
+    z-index: -1;
+}
+
+.shape-3 {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    z-index: -1;
+}
+
+.shape-4 {
+    position: absolute;
+    top: -30px;
+    right: -40px;
+    z-index: -1;
+}
+
 .type-wrap__right {
     border-left: 5px solid var(--primary-color);
     margin-left: -5px;
@@ -276,9 +312,9 @@ section {
     margin-bottom: 20px;
 }
 
-.type-wrap__left .type-wrap__headline {
-    margin-top: -20px;
-}
+/* .type-wrap__left .type-wrap__headline {
+
+} */
 
 .type-wrap__date {
     color: var(--accent-color);
@@ -308,7 +344,7 @@ section {
 
 .type-wrap__right .circle {
     left: -10px;
-    top: 90px;
+    top: 75px;
 }
 
 .reference__link {
@@ -388,13 +424,36 @@ section {
 .slider-controls {
     position: absolute;
     right: 35px;
-    top: -120px;
+    top: -70px;
 }
 
 
 .slider__arrow {
     outline: none;
     cursor: pointer;
-    width: 120px;
-    height: 60px;
+    width: 60px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.html__nav {
+    position: absolute;
+    bottom: -20px;
+    left: 30px;
+    display: flex;
+}
+
+.html__nav-item {
+    width: 35px;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin-right: 15px;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.html .tns-nav-active {
+    background: var(--accent-color);
 }

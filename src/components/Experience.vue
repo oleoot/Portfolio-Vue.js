@@ -11,21 +11,27 @@
       <div class="type-wrap">
         <div class="type-wrap__left">
           <div class="circle"></div>
-          <h2 class="type-wrap__headline">Консультант в Goodwine</h2>
-          <p class="type-wrap__date">20.07.2017-01.06.2019</p>
-          <p
-            class="type-wrap__description"
-          >Сервисное обслуживание покупателей. Проведение переучетов. Фиксация результатов работы в 1С.</p>
+          <div class="type-wrap__inner">
+            <img :src="require('../img/icons/shape-1.png')" alt class="shape-1" />
+            <h2 class="type-wrap__headline">Консультант в Goodwine</h2>
+            <p class="type-wrap__date">20.07.2017-01.06.2019</p>
+            <p
+              class="type-wrap__description"
+            >Сервисное обслуживание покупателей. Проведение переучетов. Фиксация результатов работы в 1С.</p>
+          </div>
         </div>
         <div></div>
         <div></div>
         <div class="type-wrap__right">
           <div class="circle"></div>
-          <h2 class="type-wrap__headline">Интервьюер в GFK Ukraine</h2>
-          <p class="type-wrap__date">01.06.2016-10.08.2016</p>
-          <p
-            class="type-wrap__description"
-          >Проведение социальных опросов и интервью согласно требованиям заказчика.</p>
+          <div class="type-wrap__inner">
+            <img :src="require('../img/icons/shape-2.png')" alt class="shape-2" />
+            <h2 class="type-wrap__headline">Интервьюер в GFK Ukraine</h2>
+            <p class="type-wrap__date">01.06.2016-10.08.2016</p>
+            <p
+              class="type-wrap__description"
+            >Проведение социальных опросов и интервью согласно требованиям заказчика.</p>
+          </div>
         </div>
       </div>
     </div>

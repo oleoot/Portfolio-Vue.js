@@ -2,7 +2,7 @@
   <section class="html">
     <div class="container">
       <div class="section-headline">
-        <h2 class="section-headline__text">Html/Css</h2>
+        <h2 class="section-headline__text">JavaScript</h2>
       </div>
     </div>
     <div class="container">
@@ -47,19 +47,16 @@
               </g>
             </g>
           </svg>
-        </div>
-        <div class="html__nav">
-          <div class="html__nav-item"></div>
-          <div class="html__nav-item"></div>
-          <div class="html__nav-item"></div>
-          <div class="html__nav-item"></div>
+
+          <!-- <img :src="require('../img/icons/arrow-next.png')" alt class="slider__arrow" /> -->
+          <!-- <img :src="require('../img/icons/arrow-next.png')" alt class="slider__arrow" /> -->
         </div>
         <tiny-slider
           :loop="false"
           items="4"
           gutter="0"
+          :nav="false"
           :controlsContainer="'.slider-controls'"
-          :navContainer="'.html__nav'"
         >
           <a class="project">
             <div class="project__inner boostfolia">
@@ -98,110 +95,6 @@
                 </a>
               </div>
               <p class="project__name">Boostfolia</p>
-            </div>
-          </a>
-          <a class="project">
-            <div class="project__inner dance-tour">
-              <div class="project__circle-wrap">
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/internet.png')" alt />
-                </a>
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/github-black.png')" alt />
-                </a>
-              </div>
-              <p class="project__name">Dance Tour</p>
-            </div>
-          </a>
-          <a class="project">
-            <div class="project__inner dance-tour">
-              <div class="project__circle-wrap">
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/internet.png')" alt />
-                </a>
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/github-black.png')" alt />
-                </a>
-              </div>
-              <p class="project__name">Dance Tour</p>
-            </div>
-          </a>
-          <a class="project">
-            <div class="project__inner dance-tour">
-              <div class="project__circle-wrap">
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/internet.png')" alt />
-                </a>
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/github-black.png')" alt />
-                </a>
-              </div>
-              <p class="project__name">Dance Tour</p>
-            </div>
-          </a>
-          <a class="project">
-            <div class="project__inner dance-tour">
-              <div class="project__circle-wrap">
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/internet.png')" alt />
-                </a>
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/github-black.png')" alt />
-                </a>
-              </div>
-              <p class="project__name">Dance Tour</p>
-            </div>
-          </a>
-          <a class="project">
-            <div class="project__inner dance-tour">
-              <div class="project__circle-wrap">
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/internet.png')" alt />
-                </a>
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/github-black.png')" alt />
-                </a>
-              </div>
-              <p class="project__name">Dance Tour</p>
-            </div>
-          </a>
-          <a class="project">
-            <div class="project__inner dance-tour">
-              <div class="project__circle-wrap">
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/internet.png')" alt />
-                </a>
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/github-black.png')" alt />
-                </a>
-              </div>
-              <p class="project__name">Dance Tour</p>
-            </div>
-          </a>
-          <a class="project">
-            <div class="project__inner dance-tour">
-              <div class="project__circle-wrap">
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/internet.png')" alt />
-                </a>
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/github-black.png')" alt />
-                </a>
-              </div>
-              <p class="project__name">Dance Tour</p>
-            </div>
-          </a>
-          <a class="project">
-            <div class="project__inner dance-tour">
-              <div class="project__circle-wrap">
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/internet.png')" alt />
-                </a>
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/github-black.png')" alt />
-                </a>
-              </div>
-              <p class="project__name">Dance Tour</p>
             </div>
           </a>
           <a class="project">
