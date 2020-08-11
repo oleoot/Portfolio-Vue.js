@@ -4,6 +4,7 @@
     <MainScreen />
     <About />
     <Skills />
+    <Experience />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Header from "./components/Header";
 import MainScreen from "./components/MainScreen";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 export default {
   name: "App",
   components: {
@@ -19,6 +21,7 @@ export default {
     MainScreen,
     About,
     Skills,
+    Experience,
   },
   data() {
     return {};
