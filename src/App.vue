@@ -3,6 +3,7 @@
     <Header />
     <MainScreen />
     <About />
+    <Skills />
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import Header from "./components/Header";
 import MainScreen from "./components/MainScreen";
 import About from "./components/About";
+import Skills from "./components/Skills";
 export default {
   name: "App",
   components: {
     Header,
     MainScreen,
     About,
+    Skills,
   },
   data() {
     return {};
