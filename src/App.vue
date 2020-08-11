@@ -8,6 +8,7 @@
     <Education />
     <Html />
     <!-- <JavaScript /> -->
+    <Contact />
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Html from "./components/Html";
 // import JavaScript from "./components/JavaScript";
+import Contact from "./components/Contact";
 export default {
   name: "App",
   components: {
@@ -31,6 +33,7 @@ export default {
     Education,
     Html,
     // JavaScript,
+    Contact,
   },
   data() {
     return {};
