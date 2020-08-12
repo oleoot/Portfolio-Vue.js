@@ -13,6 +13,7 @@
     <Fullstack />
     <Certificates />
     <Contact />
+    <Footer />
   </div>
 </template>
 
@@ -30,6 +31,7 @@ import Vue from "./components/Vue";
 import Fullstack from "./components/Fullstack";
 import Certificates from "./components/Certificates";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 export default {
   name: "App",
   components: {
@@ -46,6 +48,7 @@ export default {
     Fullstack,
     Certificates,
     Contact,
+    Footer,
   },
   data() {
     return {};

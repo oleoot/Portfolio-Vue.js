@@ -339,6 +339,18 @@ a {
     color: var(--accent-color);
 }
 
+/* Footer =============================================================================== */
+.footer {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.footer__text {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
 /* Utility classes ======================================================================================== */
 section {
     padding: 75px 0;
