@@ -7,7 +7,10 @@
     <Experience />
     <Education />
     <Html />
-    <!-- <JavaScript /> -->
+    <JavaScript />
+    <React />
+    <Vue />
+    <Fullstack />
     <Contact />
   </div>
 </template>
@@ -20,7 +23,10 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Html from "./components/Html";
-// import JavaScript from "./components/JavaScript";
+import JavaScript from "./components/JavaScript";
+import React from "./components/React";
+import Vue from "./components/Vue";
+import Fullstack from "./components/Fullstack";
 import Contact from "./components/Contact";
 export default {
   name: "App",
@@ -32,7 +38,10 @@ export default {
     Experience,
     Education,
     Html,
-    // JavaScript,
+    JavaScript,
+    React,
+    Vue,
+    Fullstack,
     Contact,
   },
   data() {

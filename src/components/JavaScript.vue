@@ -2,7 +2,7 @@
   <section class="html">
     <div class="container">
       <div class="section-headline">
-        <h2 class="section-headline__text">JavaScript</h2>
+        <h2 class="section-headline__text">JavaScript проекты</h2>
       </div>
     </div>
     <div class="container">
@@ -47,80 +47,32 @@
               </g>
             </g>
           </svg>
-
-          <!-- <img :src="require('../img/icons/arrow-next.png')" alt class="slider__arrow" /> -->
-          <!-- <img :src="require('../img/icons/arrow-next.png')" alt class="slider__arrow" /> -->
+        </div>
+        <div class="html__nav">
+          <div class="html__nav-item"></div>
+          <div class="html__nav-item"></div>
+          <div class="html__nav-item"></div>
+          <div class="html__nav-item"></div>
         </div>
         <tiny-slider
           :loop="false"
           items="4"
-          gutter="0"
-          :nav="false"
+          gutter="40"
           :controlsContainer="'.slider-controls'"
+          :navContainer="'.html__nav'"
+          edgePadding="30"
         >
-          <a class="project">
-            <div class="project__inner boostfolia">
+          <a :href="project.link" class="project" v-for="project in projects" :key="project.alt">
+            <div class="project__inner" :class="project.bgName">
               <div class="project__circle-wrap">
-                <a href="#" class="project__circle">
+                <a :href="project.link" class="project__circle">
                   <img :src="require('../img/icons/internet.png')" alt />
                 </a>
-                <a href="#" class="project__circle">
+                <a :href="project.github" class="project__circle">
                   <img :src="require('../img/icons/github-black.png')" alt />
                 </a>
               </div>
-              <p class="project__name">Boostfolia</p>
-            </div>
-          </a>
-          <a class="project">
-            <div class="project__inner freehand">
-              <div class="project__circle-wrap">
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/internet.png')" alt />
-                </a>
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/github-black.png')" alt />
-                </a>
-              </div>
-              <p class="project__name">Freehand</p>
-            </div>
-          </a>
-          <a class="project">
-            <div class="project__inner snow">
-              <div class="project__circle-wrap">
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/internet.png')" alt />
-                </a>
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/github-black.png')" alt />
-                </a>
-              </div>
-              <p class="project__name">Boostfolia</p>
-            </div>
-          </a>
-          <a class="project">
-            <div class="project__inner dance-tour">
-              <div class="project__circle-wrap">
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/internet.png')" alt />
-                </a>
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/github-black.png')" alt />
-                </a>
-              </div>
-              <p class="project__name">Dance Tour</p>
-            </div>
-          </a>
-          <a class="project">
-            <div class="project__inner dance-tour">
-              <div class="project__circle-wrap">
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/internet.png')" alt />
-                </a>
-                <a href="#" class="project__circle">
-                  <img :src="require('../img/icons/github-black.png')" alt />
-                </a>
-              </div>
-              <p class="project__name">Dance Tour</p>
+              <p class="project__name">{{project.name}}</p>
             </div>
           </a>
         </tiny-slider>
@@ -135,6 +87,107 @@ import VueTinySlider from "vue-tiny-slider";
 export default {
   components: {
     "tiny-slider": VueTinySlider,
+  },
+  data() {
+    return {
+      // icons: [
+      //   { webLink: "../img/icons/internet.png" },
+      //   { githubLink: "../img/icons/github.png" },
+      // ],
+      projects: [
+        {
+          name: "Boostfolia",
+          github: "https://github.com/oleoot/Boostfolia",
+          link: "https://boostfolia.netlify.app/",
+          bgName: "boostfolia",
+          alt: "project-boostfolia",
+        },
+        {
+          name: "Freehand",
+          github: "https://github.com/oleoot/Boostfolia",
+          link: "https://boostfolia.netlify.app/",
+          bgName: "freehand",
+          alt: "project-Freehand",
+        },
+        {
+          name: "Snow",
+          github: "https://github.com/oleoot/Boostfolia",
+          link: "https://boostfolia.netlify.app/",
+          bgName: "snow",
+          alt: "project-snow",
+        },
+        {
+          name: "Dance Tour",
+          github: "https://github.com/oleoot/Boostfolia",
+          link: "https://boostfolia.netlify.app/",
+          bgName: "dance-tour",
+          alt: "project-dance",
+        },
+        {
+          name: "Test",
+          github: "https://github.com/oleoot/Boostfolia",
+          link: "https://boostfolia.netlify.app/",
+          bgName: "freehand",
+          alt: "project-test",
+        },
+        {
+          name: "Test",
+          github: "https://github.com/oleoot/Boostfolia",
+          link: "https://boostfolia.netlify.app/",
+          bgName: "freehand",
+          alt: "project-test",
+        },
+        {
+          name: "Test",
+          github: "https://github.com/oleoot/Boostfolia",
+          link: "https://boostfolia.netlify.app/",
+          bgName: "freehand",
+          alt: "project-test",
+        },
+        {
+          name: "Test",
+          github: "https://github.com/oleoot/Boostfolia",
+          link: "https://boostfolia.netlify.app/",
+          bgName: "freehand",
+          alt: "project-test",
+        },
+        {
+          name: "Test",
+          github: "https://github.com/oleoot/Boostfolia",
+          link: "https://boostfolia.netlify.app/",
+          bgName: "freehand",
+          alt: "project-test",
+        },
+        {
+          name: "Test",
+          github: "https://github.com/oleoot/Boostfolia",
+          link: "https://boostfolia.netlify.app/",
+          bgName: "freehand",
+          alt: "project-test",
+        },
+        {
+          name: "Test",
+          github: "https://github.com/oleoot/Boostfolia",
+          link: "https://boostfolia.netlify.app/",
+          bgName: "freehand",
+          alt: "project-test",
+        },
+        {
+          name: "Test",
+          github: "https://github.com/oleoot/Boostfolia",
+          link: "https://boostfolia.netlify.app/",
+          bgName: "freehand",
+          alt: "project-test",
+        },
+        {
+          name: "Test",
+          github: "https://github.com/oleoot/Boostfolia",
+          link: "https://boostfolia.netlify.app/",
+          bgName: "freehand",
+          alt: "project-test",
+        },
+      ],
+    };
   },
 };
 </script>

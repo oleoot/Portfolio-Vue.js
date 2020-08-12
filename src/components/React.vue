@@ -1,8 +1,8 @@
 <template>
-  <section class="html" id="html">
+  <section class="html">
     <div class="container">
       <div class="section-headline">
-        <h2 class="section-headline__text">Html/Css</h2>
+        <h2 class="section-headline__text">React проекты</h2>
       </div>
     </div>
     <div class="container">

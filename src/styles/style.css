@@ -28,6 +28,11 @@ a {
     padding: 30px 0;
     position: fixed;
     z-index: 100;
+    transition: 0.3s;
+}
+
+.header_bg {
+    background: #1F1E1F;
 }
 
 .header .container {
@@ -101,18 +106,34 @@ a {
     padding: 150px 0 75px;
 }
 
+.about__info-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
 .about__info-container {
     padding: 30px;
     background: rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     margin-top: 50px;
+    position: relative;
+}
+
+.about__number {
+    color: rgba(20, 107, 225, 0.1);
+    font-size: 300px;
+    font-weight: 500;
+    position: absolute;
+    z-index: -1;
+    right: 40px;
 }
 
 .about__info {
     color: var(--primary-color);
     font-size: 20px;
-    font-weight: 300;
-    line-height: 45px;
+    font-weight: 400;
+    line-height: 35px;
 }
 
 .about__img {
@@ -173,42 +194,6 @@ a {
     background: var(--primary-color);
 }
 
-.skills__fill_1 {
-    width: 90%;
-}
-
-.skills__fill_2 {
-    width: 70%;
-}
-
-.skills__fill_3 {
-    width: 60%;
-}
-
-.skills__fill_4 {
-    width: 20%;
-}
-
-.skills__fill_5 {
-    width: 50%;
-}
-
-.skills__fill_6 {
-    width: 40%;
-}
-
-.skills__fill_7 {
-    width: 60%;
-}
-
-.skills__fill_8 {
-    width: 70%;
-}
-
-.skills__fill_9 {
-    width: 90%;
-}
-
 /* Html section ============================================================================= */
 .html .container:nth-child(2) {
     max-width: 1410px;
@@ -220,7 +205,7 @@ a {
 }
 
 .html .tns-slider {
-    padding: 30px;
+    padding: 30px 0;
 }
 
 /* Contact section ============================================================================================= */
@@ -419,17 +404,22 @@ section {
     font-size: 20px;
     font-weight: 500;
     margin-left: 30px;
+    transition: 0.3s;
+}
+
+.reference__link:hover {
+    color: var(--primary-color);
 }
 
 .project {
-    width: 347px !important;
+    /* width: 347px !important; */
     height: 500px;
     position: relative;
     display: block;
 }
 
 .project__inner {
-    width: calc(100% - 40px);
+    /* width: calc(100% - 40px); */
     height: 100%;
     cursor: pointer;
     border-radius: 20px;
@@ -501,6 +491,11 @@ section {
     width: 60px;
     height: 30px;
     margin-left: 20px;
+    transition: 0.3s;
+}
+
+.slider__arrow:hover {
+    fill: var(--primary-color);
 }
 
 .html__nav {

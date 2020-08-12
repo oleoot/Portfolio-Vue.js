@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header :class="headerClass">
     <div class="container">
       <div class="header__left">
         <a href>
@@ -8,26 +8,42 @@
       </div>
       <div class="header__right">
         <ul class="header__list">
-          <li class="header__list-item">
-            <a href="#" class="header__link">Обо мне</a>
-          </li>
-          <li class="header__list-item">
-            <a href="#" class="header__link">Навыки</a>
-          </li>
-          <li class="header__list-item">
-            <a href="#" class="header__link">Опыт работы</a>
-          </li>
-          <li class="header__list-item">
-            <a href="#" class="header__link">Образование</a>
-          </li>
-          <li class="header__list-item">
-            <a href="#" class="header__link">Проекты</a>
-          </li>
-          <li class="header__list-item">
-            <a href="#" class="header__link">Сертификаты</a>
+          <li class="header__list-item" v-for="link in links" :key="link.name">
+            <a :href="link.anchor" class="header__link">{{link.name}}</a>
           </li>
         </ul>
       </div>
     </div>
   </header>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      headerClass: "header",
+      links: [
+        { name: "Обо мне", anchor: "#about" },
+        { name: "Навыки", anchor: "#skills" },
+        { name: "Опыт работы", anchor: "#experience" },
+        { name: "Образование", anchor: "#education" },
+        { name: "Проекты", anchor: "#html" },
+        { name: "Сертификаты", anchor: "#certificates" },
+      ],
+    };
+  },
+  methods: {
+    changeHeaderBg() {
+      const fromTop = window.pageYOffset;
+      if (fromTop >= 100) {
+        this.headerClass = "header header_bg";
+        console.log(fromTop);
+      } else {
+        this.headerClass = "header";
+      }
+    },
+  },
+  mounted() {
+    document.addEventListener("scroll", this.changeHeaderBg);
+  },
+};
+</script>

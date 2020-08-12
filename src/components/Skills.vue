@@ -5,88 +5,37 @@
         <h2 class="section-headline__text">Навыки</h2>
       </div>
       <div class="skills__type-wrap">
-        <div class="skills__type-container">
+        <div class="skills__type-container" v-for="skill in skills" :key="skill.name">
           <div class="skills__type-container_top">
-            <p class="skills__name">Html/Css</p>
-            <p class="skills__percent">90%</p>
+            <p class="skills__name">{{skill.name}}</p>
+            <p class="skills__percent">{{skill.percent}}</p>
           </div>
           <div class="skills__type-container_bottom">
-            <div class="skills__fill skills__fill_1"></div>
-          </div>
-        </div>
-        <div class="skills__type-container">
-          <div class="skills__type-container_top">
-            <p class="skills__name">JavaScript</p>
-            <p class="skills__percent">70%</p>
-          </div>
-          <div class="skills__type-container_bottom">
-            <div class="skills__fill skills__fill_2"></div>
-          </div>
-        </div>
-        <div class="skills__type-container">
-          <div class="skills__type-container_top">
-            <p class="skills__name">React.js</p>
-            <p class="skills__percent">60%</p>
-          </div>
-          <div class="skills__type-container_bottom">
-            <div class="skills__fill skills__fill_3"></div>
-          </div>
-        </div>
-        <div class="skills__type-container">
-          <div class="skills__type-container_top">
-            <p class="skills__name">Vue.js</p>
-            <p class="skills__percent">20%</p>
-          </div>
-          <div class="skills__type-container_bottom">
-            <div class="skills__fill skills__fill_4"></div>
-          </div>
-        </div>
-        <div class="skills__type-container">
-          <div class="skills__type-container_top">
-            <p class="skills__name">Node.js</p>
-            <p class="skills__percent">50%</p>
-          </div>
-          <div class="skills__type-container_bottom">
-            <div class="skills__fill skills__fill_5"></div>
-          </div>
-        </div>
-        <div class="skills__type-container">
-          <div class="skills__type-container_top">
-            <p class="skills__name">MongoDB</p>
-            <p class="skills__percent">40%</p>
-          </div>
-          <div class="skills__type-container_bottom">
-            <div class="skills__fill skills__fill_6"></div>
-          </div>
-        </div>
-        <div class="skills__type-container">
-          <div class="skills__type-container_top">
-            <p class="skills__name">Sass</p>
-            <p class="skills__percent">60%</p>
-          </div>
-          <div class="skills__type-container_bottom">
-            <div class="skills__fill skills__fill_7"></div>
-          </div>
-        </div>
-        <div class="skills__type-container">
-          <div class="skills__type-container_top">
-            <p class="skills__name">Git</p>
-            <p class="skills__percent">70%</p>
-          </div>
-          <div class="skills__type-container_bottom">
-            <div class="skills__fill skills__fill_8"></div>
-          </div>
-        </div>
-        <div class="skills__type-container">
-          <div class="skills__type-container_top">
-            <p class="skills__name">Ps/Figma/Zeplin</p>
-            <p class="skills__percent">90%</p>
-          </div>
-          <div class="skills__type-container_bottom">
-            <div class="skills__fill skills__fill_9"></div>
+            <div class="skills__fill" :style="{width: skill.percent}"></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+
+<script>
+export default {
+  data() {
+    return {
+      skills: [
+        { name: "Html/Css", percent: "90%" },
+        { name: "JavaScript", percent: "70%" },
+        { name: "React.js", percent: "60%" },
+        { name: "Vue.js", percent: "20%" },
+        { name: "Node.js", percent: "50%" },
+        { name: "MongoDB", percent: "40%" },
+        { name: "Sass", percent: "60%" },
+        { name: "Git", percent: "70%" },
+        { name: "Ps/Figma/Zeplin", percent: "90%" },
+      ],
+    };
+  },
+};
+</script>
