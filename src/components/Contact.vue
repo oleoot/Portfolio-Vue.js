@@ -14,9 +14,28 @@
           <textarea name class="contact__textarea"></textarea>
           <a href="#" class="contact__button">Отправить</a>
         </div>
-        <div class="contact__pane contact__avatar">
-          <img :src="require('../img/icons/avatar.png')" alt class="avatar" />
-          <p class="contact__name">Олег Куць</p>
+        <div class="contact__pane">
+          <img :src="require('../img/icons/shape-2.png')" alt class="shape-5" />
+          <div class="contact__info-wrap">
+            <img :src="require('../img/icons/telegram.png')" alt class="about__img" />
+            <a href="#" class="contact__link">oleg.kouts@gmail.com</a>
+          </div>
+          <div class="contact__info-wrap">
+            <img :src="require('../img/icons/telegram.png')" alt class="about__img" />
+            <a href="#" class="contact__link">+38 066 733 89 00</a>
+          </div>
+          <div class="contact__info-wrap">
+            <img :src="require('../img/icons/telegram.png')" alt class="about__img" />
+            <a href="#" class="contact__link">@oleoot</a>
+          </div>
+          <div class="contact__info-wrap">
+            <img :src="require('../img/icons/github.png')" alt class="about__img" />
+            <a href="#" class="contact__link">github.com/oleoot</a>
+          </div>
+          <div class="contact__info-wrap">
+            <img :src="require('../img/icons/linkedin.png')" alt class="about__img" />
+            <a href="#" class="contact__link">linkedin.com/in/oleg-kouts</a>
+          </div>
         </div>
       </div>
     </div>

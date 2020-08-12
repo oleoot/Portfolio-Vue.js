@@ -4,6 +4,7 @@
       <div class="section-headline">
         <h2 class="section-headline__text">Навыки</h2>
       </div>
+      <!-- <tiny-slider :mouse-drag="true" :loop="false" items="3" gutter="20"> -->
       <div class="skills__type-wrap">
         <div class="skills__type-container" v-for="skill in skills" :key="skill.name">
           <div class="skills__type-container_top">
@@ -15,12 +16,14 @@
           </div>
         </div>
       </div>
+      <!-- </tiny-slider> -->
     </div>
   </section>
 </template>
 
 
 <script>
+// import VueTinySlider from "vue-tiny-slider";
 export default {
   data() {
     return {
@@ -37,5 +40,8 @@ export default {
       ],
     };
   },
+  // components: {
+  //   "tiny-slider": VueTinySlider,
+  // },
 };
 </script>

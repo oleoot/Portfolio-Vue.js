@@ -32,7 +32,8 @@ a {
 }
 
 .header_bg {
-    background: #1F1E1F;
+    background: rgba(25, 25, 25, 0.9);
+    padding: 20px 0;
 }
 
 .header .container {
@@ -151,7 +152,8 @@ a {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 55px;
+    column-gap: 55px;
+    row-gap: 40px
 }
 
 .skills__type-container {
@@ -221,6 +223,14 @@ a {
     background: rgba(0, 0, 0, 0.15);
     padding: 50px;
     border-radius: 30px;
+    position: relative;
+}
+
+.shape-5 {
+    position: absolute;
+    z-index: -1;
+    right: -60px;
+    bottom: 100px;
 }
 
 .contact__input,
@@ -251,8 +261,13 @@ a {
     padding: 20px 40px;
     background: var(--accent-color);
     color: var(--primary-color);
-    margin: 20px 0 0 auto;
+    margin: 0 0 0 auto;
     font-weight: 500;
+    transition: 0.3s;
+}
+
+.contact__button:hover {
+    background: #146be1cc;
 }
 
 .contact__avatar {
@@ -273,6 +288,27 @@ a {
     color: var(--primary-color);
     font-weight: 500;
     margin-top: 30px;
+}
+
+.contact__info-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.contact__info-wrap:not(:last-child) {
+    margin-bottom: 45px;
+}
+
+.contact__link {
+    color: var(--primary-color);
+    font-size: 22px;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.contact__link:hover {
+    color: var(--accent-color);
 }
 
 /* Utility classes ======================================================================================== */
