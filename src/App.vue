@@ -11,6 +11,7 @@
     <React />
     <Vue />
     <Fullstack />
+    <Certificates />
     <Contact />
   </div>
 </template>
@@ -27,6 +28,7 @@ import JavaScript from "./components/JavaScript";
 import React from "./components/React";
 import Vue from "./components/Vue";
 import Fullstack from "./components/Fullstack";
+import Certificates from "./components/Certificates";
 import Contact from "./components/Contact";
 export default {
   name: "App",
@@ -42,6 +44,7 @@ export default {
     React,
     Vue,
     Fullstack,
+    Certificates,
     Contact,
   },
   data() {

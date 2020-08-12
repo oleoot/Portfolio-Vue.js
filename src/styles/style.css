@@ -210,6 +210,34 @@ a {
     padding: 30px 0;
 }
 
+/* Certificates section =================================================================================== */
+.certificates__type-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.certificates__type {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.certificates__img {
+    width: 100%;
+    /* -webkit-filter: grayscale(70%);
+    -moz-filter: grayscale(70%);
+    -ms-filter: grayscale(70%);
+    -o-filter: grayscale(70%);
+    filter: grayscale(70%);
+    filter: gray;
+    transition: 0.3s; */
+}
+
 /* Contact section ============================================================================================= */
 .contact__inner {
     display: grid;
