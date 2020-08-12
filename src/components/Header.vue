@@ -1,12 +1,12 @@
 <template>
   <header :class="headerClass">
     <div class="container">
-      <div class="header__left">
-        <a href>
+      <div>
+        <a href="#main">
           <img :src="require('../img/icons/logo.png')" alt="logo" class="logo" />
         </a>
       </div>
-      <div class="header__right">
+      <div>
         <ul class="header__list">
           <li class="header__list-item" v-for="link in links" :key="link.name">
             <a :href="link.anchor" class="header__link">{{link.name}}</a>

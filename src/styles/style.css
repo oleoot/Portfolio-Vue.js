@@ -90,18 +90,8 @@ a {
     left: 0;
     right: 0;
     margin: auto;
-    /* animation: arrow-down linear 1.5s infinite; */
 }
 
-/* @keyframes arrow-down {
-    0% {
-        bottom: 30px;
-    }
-
-    100% {
-        bottom: 10px;
-    }
-} */
 /* About section ============================================================================= */
 .about {
     padding: 150px 0 75px;
@@ -137,14 +127,14 @@ a {
     line-height: 35px;
 }
 
-.about__img {
-    width: 30px;
-    margin-left: 20px;
-}
-
 .about .section-headline__icons {
     display: flex;
     align-items: center;
+}
+
+.about__img {
+    width: 30px;
+    margin-left: 20px;
 }
 
 /* Skills section ============================================================================================= */
@@ -166,7 +156,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .skills__name,
@@ -191,22 +181,22 @@ a {
 }
 
 .skills__fill {
-    width: 100%;
     height: 5px;
     background: var(--primary-color);
 }
 
 /* Html section ============================================================================= */
-.html .container:nth-child(2) {
+.slider__container {
     max-width: 1410px;
+    margin: 0 auto;
 }
 
-.html__slider-wrap {
+.slider-wrap {
     margin-top: 30px;
     position: relative;
 }
 
-.html .tns-slider {
+.tns-slider {
     padding: 30px 0;
 }
 
@@ -391,6 +381,12 @@ section {
     padding-right: 50px;
 }
 
+.type-wrap__right {
+    border-left: 5px solid var(--primary-color);
+    margin-left: -5px;
+    padding: 80px 0 0 50px;
+}
+
 .type-wrap__inner {
     background: rgba(0, 0, 0, 0.15);
     padding: 40px 50px 50px;
@@ -399,50 +395,12 @@ section {
     position: relative;
 }
 
-.shape-1 {
-    position: absolute;
-    top: -20px;
-    left: -30px;
-    z-index: -1;
-}
-
-.shape-2 {
-    position: absolute;
-    top: -90px;
-    right: 50px;
-    z-index: -1;
-}
-
-.shape-3 {
-    position: absolute;
-    bottom: 30px;
-    left: 50px;
-    z-index: -1;
-}
-
-.shape-4 {
-    position: absolute;
-    top: -30px;
-    right: -40px;
-    z-index: -1;
-}
-
-.type-wrap__right {
-    border-left: 5px solid var(--primary-color);
-    margin-left: -5px;
-    padding: 80px 0 0 50px;
-}
-
 .type-wrap__headline {
     color: var(--primary-color);
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 20px;
 }
-
-/* .type-wrap__left .type-wrap__headline {
-
-} */
 
 .type-wrap__date {
     color: var(--accent-color);
@@ -475,6 +433,31 @@ section {
     top: 75px;
 }
 
+.shape {
+    position: absolute;
+    z-index: -1;
+}
+
+.shape-1 {
+    top: -20px;
+    left: -30px;
+}
+
+.shape-2 {
+    top: -90px;
+    right: 50px;
+}
+
+.shape-3 {
+    bottom: 30px;
+    left: 50px;
+}
+
+.shape-4 {
+    top: -30px;
+    right: -40px;
+}
+
 .reference__link {
     color: var(--accent-color);
     font-size: 20px;
@@ -488,39 +471,22 @@ section {
 }
 
 .project {
-    /* width: 347px !important; */
     height: 500px;
     position: relative;
-    display: block;
 }
 
 .project__inner {
-    /* width: calc(100% - 40px); */
     height: 100%;
     cursor: pointer;
     border-radius: 20px;
     transition: 0.3s;
     position: relative;
+    background-position: center;
+    background-size: cover;
 }
 
 .project__inner:hover {
     transform: scale(1.05);
-}
-
-.boostfolia {
-    background: url(../img/projects/html-css/boostfolia/boostfolia-bg.png) center/cover;
-}
-
-.snow {
-    background: url(../img/projects/html-css/snow/snow-bg.png) center/cover;
-}
-
-.freehand {
-    background: url(../img/projects/html-css/Freehand/freehand-bg.png) center/cover;
-}
-
-.dance-tour {
-    background: url(../img/projects/html-css/dance-tour/dance-tour-bg.jpg) center/cover;
 }
 
 .project__circle-wrap {
@@ -574,14 +540,14 @@ section {
     fill: var(--primary-color);
 }
 
-.html__nav {
+.slider__nav {
     position: absolute;
     bottom: -20px;
     left: 30px;
     display: flex;
 }
 
-.html__nav-item {
+.slider__nav-item {
     width: 35px;
     height: 10px;
     background: rgba(0, 0, 0, 0.15);
@@ -592,6 +558,6 @@ section {
     cursor: pointer;
 }
 
-.html .tns-nav-active {
+.tns-nav-active {
     background: var(--accent-color);
 }

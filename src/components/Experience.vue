@@ -12,7 +12,7 @@
         <div class="type-wrap__left">
           <div class="circle"></div>
           <div class="type-wrap__inner">
-            <img :src="require('../img/icons/shape-1.png')" alt class="shape-1" />
+            <img :src="require('../img/icons/shape-1.png')" alt class="shape shape-1" />
             <h2 class="type-wrap__headline">Консультант в Goodwine</h2>
             <p class="type-wrap__date">20.07.2017-01.06.2019</p>
             <p
@@ -25,7 +25,7 @@
         <div class="type-wrap__right">
           <div class="circle"></div>
           <div class="type-wrap__inner">
-            <img :src="require('../img/icons/shape-2.png')" alt class="shape-2" />
+            <img :src="require('../img/icons/shape-2.png')" alt class="shape shape-2" />
             <h2 class="type-wrap__headline">Интервьюер в GFK Ukraine</h2>
             <p class="type-wrap__date">01.06.2016-10.08.2016</p>
             <p

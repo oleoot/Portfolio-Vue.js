@@ -2,11 +2,11 @@
   <section class="html" id="html">
     <div class="container">
       <div class="section-headline">
-        <h2 class="section-headline__text">Html/Css</h2>
+        <h2 class="section-headline__text">Html/Css проекты</h2>
       </div>
     </div>
-    <div class="container">
-      <div class="html__slider-wrap">
+    <div class="slider__container">
+      <div class="slider-wrap">
         <div class="slider-controls">
           <svg
             version="1.1"
@@ -48,22 +48,22 @@
             </g>
           </svg>
         </div>
-        <div class="html__nav">
-          <div class="html__nav-item"></div>
-          <div class="html__nav-item"></div>
-          <div class="html__nav-item"></div>
-          <div class="html__nav-item"></div>
+        <div class="slider__nav">
+          <div class="slider__nav-item"></div>
+          <div class="slider__nav-item"></div>
+          <div class="slider__nav-item"></div>
+          <div class="slider__nav-item"></div>
         </div>
         <tiny-slider
           :loop="false"
           items="4"
           gutter="40"
           :controlsContainer="'.slider-controls'"
-          :navContainer="'.html__nav'"
+          :navContainer="'.slider__nav'"
           edgePadding="30"
         >
           <a :href="project.link" class="project" v-for="project in projects" :key="project.alt">
-            <div class="project__inner" :class="project.bgName">
+            <div class="project__inner" :style="{backgroundImage: 'url(' + project.bg + ')' }">
               <div class="project__circle-wrap">
                 <a :href="project.link" class="project__circle">
                   <img :src="require('../img/icons/internet.png')" alt />
@@ -99,91 +99,91 @@ export default {
           name: "Boostfolia",
           github: "https://github.com/oleoot/Boostfolia",
           link: "https://boostfolia.netlify.app/",
-          bgName: "boostfolia",
+          bg: require("../img/projects/html-css/boostfolia/boostfolia-bg.png"),
           alt: "project-boostfolia",
         },
         {
           name: "Freehand",
           github: "https://github.com/oleoot/Boostfolia",
           link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
+          bg: require("../img/projects/html-css/Freehand/freehand-bg.png"),
           alt: "project-Freehand",
         },
         {
           name: "Snow",
           github: "https://github.com/oleoot/Boostfolia",
           link: "https://boostfolia.netlify.app/",
-          bgName: "snow",
+          bg: require("../img/projects/html-css/snow/snow-bg.png"),
           alt: "project-snow",
         },
         {
           name: "Dance Tour",
           github: "https://github.com/oleoot/Boostfolia",
           link: "https://boostfolia.netlify.app/",
-          bgName: "dance-tour",
+          bg: require("../img/projects/html-css/dance-tour/dance-tour-bg.jpg"),
           alt: "project-dance",
         },
         {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
+          name: "Lasles VPN",
+          github: "https://github.com/oleoot/Lasles-vpn-website",
+          link: "https://lasles-vpn-site.netlify.app/",
+          bg: require("../img/projects/html-css/lasles-vpn/lasles-bg.png"),
           alt: "project-test",
         },
         {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
+          name: "Delicious Sushi",
+          github: "https://github.com/oleoot/Delicious-sushi-website",
+          link: "https://delicious-sushi.netlify.app/",
+          bg: require("../img/projects/html-css/delicious-sushi/delicious-sushi-bg.png"),
           alt: "project-test",
         },
         {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
+          name: "Silon",
+          github: "https://github.com/oleoot/Silon",
+          link: "https://silon.netlify.com/",
+          bg: require("../img/projects/html-css/silon/silon-bg.png"),
           alt: "project-test",
         },
         {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
+          name: "Merkury",
+          github: "https://github.com/oleoot/Merkury",
+          link: "https://merkury-website.netlify.com/",
+          bg: require("../img/projects/html-css/merkury/merkury-bg.png"),
           alt: "project-test",
         },
         {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
+          name: "My Tunes",
+          github: "https://github.com/oleoot/myTunes-website",
+          link: "https://mytunes-website.netlify.com/",
+          bg: require("../img/projects/html-css/myTunes/showcase.png"),
           alt: "project-test",
         },
         {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
+          name: "Data Warehouse",
+          github: "https://github.com/oleoot/Data-warehouse",
+          link: "https://data-warehouse.netlify.com/",
+          bg: require("../img/projects/html-css/data-warehouse/data-warehouse-bg.png"),
           alt: "project-test",
         },
         {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
+          name: "Coffee Shop",
+          github: "https://github.com/oleoot/coffee-shop",
+          link: "https://coffee-shop-website.netlify.app/",
+          bg: require("../img/projects/html-css/coffee-shop/coffee-shop-bg.png"),
           alt: "project-test",
         },
         {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
+          name: "Cosmo Junkie",
+          github: "https://github.com/oleoot/Cosmo-junkie",
+          link: "https://cosmo-junkie-website.netlify.app/",
+          bg: require("../img/projects/html-css/cosmo-junkie/cosmo-junkie-bg.png"),
           alt: "project-test",
         },
         {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
+          name: "Netflix",
+          github: "https://github.com/oleoot/Netflix-main-page",
+          link: "https://netflix-main-page.netlify.com/",
+          bg: require("../img/projects/html-css/netflix/netflix-bg.png"),
           alt: "project-test",
         },
       ],

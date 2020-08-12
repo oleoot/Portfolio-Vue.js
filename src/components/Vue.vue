@@ -1,13 +1,13 @@
 <template>
-  <section class="html">
+  <section class="react">
     <div class="container">
       <div class="section-headline">
         <h2 class="section-headline__text">Vue.js проекты</h2>
       </div>
     </div>
-    <div class="container">
-      <div class="html__slider-wrap">
-        <div class="slider-controls">
+    <div class="slider__container">
+      <div class="slider-wrap">
+        <div class="slider-controls vue-slider-controls">
           <svg
             version="1.1"
             id="Capa_1"
@@ -48,18 +48,18 @@
             </g>
           </svg>
         </div>
-        <div class="html__nav">
-          <div class="html__nav-item"></div>
-          <div class="html__nav-item"></div>
-          <div class="html__nav-item"></div>
-          <div class="html__nav-item"></div>
+        <div class="slider__nav vue-slider-nav">
+          <div class="slider__nav-item"></div>
+          <div class="slider__nav-item"></div>
+          <div class="slider__nav-item"></div>
+          <div class="slider__nav-item"></div>
         </div>
         <tiny-slider
           :loop="false"
           items="4"
           gutter="40"
-          :controlsContainer="'.slider-controls'"
-          :navContainer="'.html__nav'"
+          :controlsContainer="'.vue-slider-controls'"
+          :navContainer="'.vue-slider-nav'"
           edgePadding="30"
         >
           <a :href="project.link" class="project" v-for="project in projects" :key="project.alt">
