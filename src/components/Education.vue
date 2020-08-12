@@ -1,5 +1,5 @@
 <template>
-  <section class="experience">
+  <section class="education" id="education">
     <div class="container">
       <div class="section-headline">
         <h2 class="section-headline__text">Образование</h2>

@@ -133,8 +133,12 @@ a {
 }
 
 .about__img {
-    width: 30px;
     margin-left: 20px;
+    transition: 0.3s;
+}
+
+.about__img:hover {
+    fill: var(--primary-color);
 }
 
 /* Skills section ============================================================================================= */
@@ -265,6 +269,8 @@ a {
 
 .contact__textarea {
     resize: none;
+    height: 70px;
+    padding-top: 20px;
 }
 
 .contact__label {
@@ -282,6 +288,7 @@ a {
     margin: 0 0 0 auto;
     font-weight: 500;
     transition: 0.3s;
+    border-radius: 5px;
 }
 
 .contact__button:hover {
@@ -325,8 +332,16 @@ a {
     transition: 0.3s;
 }
 
-.contact__link:hover {
+.contact__icon {
+    transition: 0.3s;
+}
+
+.contact__info-wrap:hover .contact__link {
     color: var(--accent-color);
+}
+
+.contact__info-wrap:hover .contact__icon {
+    fill: var(--primary-color)
 }
 
 /* Footer =============================================================================== */
