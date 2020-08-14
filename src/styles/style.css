@@ -238,11 +238,11 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 100px;
+    margin: 50px 0 0;
 }
 
 .contact__pane {
     /* max-width: 600px; */
-    margin: 50px 0 0;
     background: rgba(0, 0, 0, 0.15);
     padding: 50px;
     border-radius: 30px;
@@ -651,7 +651,7 @@ section {
     }
 
     .type-wrap__inner {
-        padding: 40px 30px 50px;
+        padding: 30px;
     }
 
     .certificates__type-wrap {
@@ -664,5 +664,114 @@ section {
 
     .type-wrap {
         margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .header__list {
+        display: none;
+    }
+
+    .container,
+    .slider__container {
+        max-width: 720px;
+    }
+
+    .type-wrap__left {
+        padding-right: 20px;
+    }
+
+    .type-wrap__right {
+        padding-left: 20px;
+    }
+
+    .contact__inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .container,
+    .slider__container {
+        max-width: 580px;
+    }
+
+    .main__headline {
+        font-size: 70px;
+    }
+
+    .main__desc {
+        font-size: 40px;
+    }
+
+    .skills__type-wrap {
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+
+    .shape-4 {
+        right: 0;
+    }
+
+    .shape-5 {
+        right: -30px;
+    }
+
+    .slider__arrow {
+        width: 40px;
+        height: 20px;
+    }
+
+    .certificates__type-wrap {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .type-wrap {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .type-wrap__left {
+        border-right: 0;
+        border-left: 5px solid var(--primary-color);
+        padding-left: 20px;
+        text-align: left;
+        padding-right: 0;
+    }
+
+    .type-wrap__right {
+        grid-column: 1;
+        margin-left: 0;
+        padding: 40px 0 0 20px;
+    }
+
+    .type-wrap__left .circle {
+        left: -10px;
+    }
+
+    .type-wrap__right .circle {
+        top: 35px;
+    }
+
+    .shape-1 {
+        top: -10px;
+        right: -10px;
+        left: auto;
+        display: none;
+    }
+
+    .shape-2 {
+        display: none;
+        width: 150px;
+        left: 100px;
+        bottom: -60px;
+        right: auto;
+        top: auto;
+    }
+
+    .shape-3,
+    .shape-4 {
+        display: none;
     }
 }
