@@ -53,6 +53,8 @@
           <div class="slider__nav-item"></div>
           <div class="slider__nav-item"></div>
           <div class="slider__nav-item"></div>
+          <div class="slider__nav-item slider__nav-item_hidden"></div>
+          <div class="slider__nav-item slider__nav-item_hidden"></div>
         </div>
         <tiny-slider
           :loop="false"
@@ -61,6 +63,14 @@
           :controlsContainer="'.js-slider-controls'"
           :navContainer="'.js-slider-nav'"
           edgePadding="30"
+          :responsive="{
+      1023: {
+        items:3,
+      },
+      1441: {
+        items: 4
+      }
+    }"
         >
           <a
             :href="project.link"

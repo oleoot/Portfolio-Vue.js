@@ -50,9 +50,7 @@
         </div>
         <div class="slider__nav fullstack-slider-nav">
           <div class="slider__nav-item"></div>
-          <div class="slider__nav-item"></div>
-          <div class="slider__nav-item"></div>
-          <div class="slider__nav-item"></div>
+          <div class="slider__nav-item slider__nav-item_hidden"></div>
         </div>
         <tiny-slider
           :loop="false"
@@ -61,6 +59,14 @@
           :controlsContainer="'.fullstack-slider-controls'"
           :navContainer="'.fullstack-slider-nav'"
           edgePadding="30"
+          :responsive="{
+      1023: {
+        items:3,
+      },
+      1441: {
+        items: 4
+      }
+    }"
         >
           <a :href="project.link" class="project" v-for="project in projects" :key="project.id">
             <div class="project__inner" :style="{backgroundImage: 'url(' + project.bg + ')' }">
@@ -117,6 +123,13 @@ export default {
           link: "https://twitter-clone-website.netlify.app/",
           bg: require("../img/projects/fullstack/twitter-clone/twitter-clone-bg.png"),
           id: "5.3",
+        },
+        {
+          name: "Chat Room",
+          github: "https://github.com/oleoot/Chat-room-app",
+          link: "https://chat-room-app-ok.herokuapp.com/",
+          bg: require("../img/projects/fullstack/chat-room/chat-room-bg.png"),
+          id: "5.4",
         },
         {
           name: "Chat Room",

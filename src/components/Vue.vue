@@ -50,9 +50,7 @@
         </div>
         <div class="slider__nav vue-slider-nav">
           <div class="slider__nav-item"></div>
-          <div class="slider__nav-item"></div>
-          <div class="slider__nav-item"></div>
-          <div class="slider__nav-item"></div>
+          <div class="slider__nav-item slider__nav-item_hidden"></div>
         </div>
         <tiny-slider
           :loop="false"
@@ -61,6 +59,14 @@
           :controlsContainer="'.vue-slider-controls'"
           :navContainer="'.vue-slider-nav'"
           edgePadding="30"
+          :responsive="{
+      1023: {
+        items:3,
+      },
+      1441: {
+        items: 4
+      }
+    }"
         >
           <a :href="project.link" class="project" v-for="project in projects" :key="project.id">
             <div class="project__inner" :style="{backgroundImage: 'url(' + project.bg + ')' }">
@@ -115,6 +121,12 @@ export default {
           github: "https://github.com/oleoot/Boostfolia",
           bg: require("../img/projects/vue/todo-app/todo-app-bg.png"),
           id: "4.3",
+        },
+        {
+          name: "Score Counter",
+          github: "https://github.com/oleoot/Boostfolia",
+          bg: require("../img/projects/vue/score-counter/score-counter-bg.png"),
+          id: "4.4",
         },
         {
           name: "Score Counter",
