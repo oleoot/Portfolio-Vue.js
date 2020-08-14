@@ -62,8 +62,15 @@
           :navContainer="'.react-slider-nav'"
           edgePadding="30"
         >
-          <a :href="project.link" class="project" v-for="project in projects" :key="project.alt">
-            <div class="project__inner" :class="project.bgName">
+          <a
+            :href="project.link"
+            class="project"
+            v-for="project in projects"
+            :key="project.id"
+            target="_blank"
+          >
+            <div class="project__inner" :style="{backgroundImage: 'url(' + project.bg + ')' }">
+              <div class="project__mask"></div>
               <div class="project__circle-wrap">
                 <a :href="project.link" class="project__circle">
                   <img :src="require('../img/icons/internet.png')" alt />
@@ -96,95 +103,63 @@ export default {
       // ],
       projects: [
         {
-          name: "Boostfolia",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "boostfolia",
-          alt: "project-boostfolia",
+          name: "YouFruit",
+          github: "https://github.com/oleoot/Youfruit-react",
+          link: "https://youfruit-react.netlify.app/",
+          bg: require("../img/projects/react/youfruit/youfruit-bg.png"),
+          id: "3.1",
         },
         {
-          name: "Freehand",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-Freehand",
+          name: "Hot Ones",
+          github:
+            "https://github.com/oleoot/hot-sauce-heat-meter-from-hot-ones-react-hooks",
+          link: "https://hot-ones-souces.netlify.app/",
+          bg: require("../img/projects/react/hot-ones-hot-sauces/hot-ones-hot-sauces-bg.png"),
+          id: "3.2",
         },
         {
-          name: "Snow",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "snow",
-          alt: "project-snow",
+          name: "Expense Tracker",
+          github: "https://github.com/oleoot/Expense-tracker-on-React",
+          link: "https://expense-tracker-website.netlify.com/",
+          bg: require("../img/projects/react/expense-tracker/expense-tracker-bg.png"),
+          id: "3.3",
         },
         {
-          name: "Dance Tour",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "dance-tour",
-          alt: "project-dance",
+          name: "Reading List",
+          github:
+            "https://github.com/oleoot/Reading-list-app-using-react-context-hooks",
+          link: "https://reading-list-react-context-hooks.netlify.app",
+          bg: require("../img/projects/react/reading-list/reading-list-bg.png"),
+          id: "3.4",
         },
         {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
+          name: "Recipe Search",
+          github: "https://github.com/oleoot/Recipe-searching-app-on-react",
+          link: "https://recipe-searching-app.netlify.com/",
+          bg: require("../img/projects/react/recipe-searching/recipe-search-bg.png"),
+          id: "3.5",
         },
         {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
+          name: "Todo List Hooks",
+          github: "https://github.com/oleoot/To-do-list-react-hooks",
+          link: "https://react-hooks-todo-list.netlify.app/",
+          bg: require("../img/projects/react/todo-hooks/todo-hooks-bg.png"),
+          id: "3.6",
         },
         {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
+          name: "Page Translate",
+          github:
+            "https://github.com/oleoot/translating-react-page-with-react-intl",
+          link: "https://react-translate-page.netlify.app/",
+          bg: require("../img/projects/react/page-translation/page-translation-bg.png"),
+          id: "3.7",
         },
         {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
+          name: "Theme Change",
+          github: "https://github.com/oleoot/react-hooks-context-api",
+          link: "https://react-context-hooks-training.netlify.app",
+          bg: require("../img/projects/react/context-hooks-theme-change/context-hooks-theme-change-bg.png"),
+          id: "3.8",
         },
       ],
     };

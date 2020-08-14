@@ -62,8 +62,9 @@
           :navContainer="'.vue-slider-nav'"
           edgePadding="30"
         >
-          <a :href="project.link" class="project" v-for="project in projects" :key="project.alt">
-            <div class="project__inner" :class="project.bgName">
+          <a :href="project.link" class="project" v-for="project in projects" :key="project.id">
+            <div class="project__inner" :style="{backgroundImage: 'url(' + project.bg + ')' }">
+              <div class="project__mask"></div>
               <div class="project__circle-wrap">
                 <a :href="project.link" class="project__circle">
                   <img :src="require('../img/icons/internet.png')" alt />
@@ -96,95 +97,30 @@ export default {
       // ],
       projects: [
         {
-          name: "Boostfolia",
+          name: "Quiz App",
           github: "https://github.com/oleoot/Boostfolia",
           link: "https://boostfolia.netlify.app/",
-          bgName: "boostfolia",
-          alt: "project-boostfolia",
+          bg: require("../img/projects/vue/quiz-app/quiz-app-bg.png"),
+          id: "4.1",
         },
         {
-          name: "Freehand",
+          name: "Pet Adoption",
           github: "https://github.com/oleoot/Boostfolia",
           link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-Freehand",
+          bg: require("../img/projects/vue/pet-adoption/pet-adoption-bg.png"),
+          id: "4.2",
         },
         {
-          name: "Snow",
+          name: "Todo App",
           github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "snow",
-          alt: "project-snow",
+          bg: require("../img/projects/vue/todo-app/todo-app-bg.png"),
+          id: "4.3",
         },
         {
-          name: "Dance Tour",
+          name: "Score Counter",
           github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "dance-tour",
-          alt: "project-dance",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
+          bg: require("../img/projects/vue/score-counter/score-counter-bg.png"),
+          id: "4.4",
         },
       ],
     };

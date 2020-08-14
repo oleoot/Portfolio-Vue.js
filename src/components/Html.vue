@@ -70,6 +70,7 @@
             target="_blank"
           >
             <div class="project__inner" :style="{backgroundImage: 'url(' + project.bg + ')' }">
+              <div class="project__mask"></div>
               <div class="project__circle-wrap">
                 <a :href="project.link" class="project__circle" target="_blank">
                   <img :src="require('../img/icons/internet.png')" alt />
@@ -106,91 +107,91 @@ export default {
           github: "https://github.com/oleoot/Boostfolia",
           link: "https://boostfolia.netlify.app/",
           bg: require("../img/projects/html-css/boostfolia/boostfolia-bg.png"),
-          id: "1",
+          id: "1.1",
         },
         {
           name: "Freehand",
           github: "https://github.com/oleoot/Freehand-website",
           link: "https://freehand-website.netlify.app/",
           bg: require("../img/projects/html-css/Freehand/freehand-bg.png"),
-          id: "2",
+          id: "1.2",
         },
         {
           name: "Snow",
           github: "https://github.com/oleoot/Snow",
           link: "https://snow-website.netlify.com/",
           bg: require("../img/projects/html-css/snow/snow-bg.png"),
-          id: "3",
+          id: "1.3",
         },
         {
           name: "Dance Tour",
           github: "https://github.com/oleoot/Dance-tour",
           link: "https://dance-tour.netlify.app/",
           bg: require("../img/projects/html-css/dance-tour/dance-tour-bg.jpg"),
-          id: "4",
+          id: "1.4",
         },
         {
           name: "Lasles VPN",
           github: "https://github.com/oleoot/Lasles-vpn-website",
           link: "https://lasles-vpn-site.netlify.app/",
           bg: require("../img/projects/html-css/lasles-vpn/lasles-bg.png"),
-          id: "5",
+          id: "1.5",
         },
         {
           name: "Delicious Sushi",
           github: "https://github.com/oleoot/Delicious-sushi-website",
           link: "https://delicious-sushi.netlify.app/",
           bg: require("../img/projects/html-css/delicious-sushi/delicious-sushi-bg.png"),
-          id: "6",
+          id: "1.6",
         },
         {
           name: "Silon",
           github: "https://github.com/oleoot/Silon",
           link: "https://silon.netlify.com/",
           bg: require("../img/projects/html-css/silon/silon-bg.png"),
-          id: "7",
+          id: "1.7",
         },
         {
           name: "Merkury",
           github: "https://github.com/oleoot/Merkury",
           link: "https://merkury-website.netlify.com/",
           bg: require("../img/projects/html-css/merkury/merkury-bg.png"),
-          id: "8",
+          id: "1.8",
         },
         {
           name: "My Tunes",
           github: "https://github.com/oleoot/myTunes-website",
           link: "https://mytunes-website.netlify.com/",
           bg: require("../img/projects/html-css/myTunes/showcase.png"),
-          id: "9",
+          id: "1.9",
         },
         {
           name: "Data Warehouse",
           github: "https://github.com/oleoot/Data-warehouse",
           link: "https://data-warehouse.netlify.com/",
           bg: require("../img/projects/html-css/data-warehouse/data-warehouse-bg.png"),
-          id: "10",
+          id: "1.10",
         },
         {
           name: "Coffee Shop",
           github: "https://github.com/oleoot/coffee-shop",
           link: "https://coffee-shop-website.netlify.app/",
           bg: require("../img/projects/html-css/coffee-shop/coffee-shop-bg.png"),
-          id: "11",
+          id: "1.11",
         },
         {
           name: "Cosmo Junkie",
           github: "https://github.com/oleoot/Cosmo-junkie",
           link: "https://cosmo-junkie-website.netlify.app/",
           bg: require("../img/projects/html-css/cosmo-junkie/cosmo-junkie-bg.png"),
-          id: "12",
+          id: "1.12",
         },
         {
           name: "Netflix",
           github: "https://github.com/oleoot/Netflix-main-page",
           link: "https://netflix-main-page.netlify.com/",
           bg: require("../img/projects/html-css/netflix/netflix-bg.png"),
-          id: "13",
+          id: "1.13",
         },
       ],
     };

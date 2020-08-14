@@ -62,8 +62,9 @@
           :navContainer="'.fullstack-slider-nav'"
           edgePadding="30"
         >
-          <a :href="project.link" class="project" v-for="project in projects" :key="project.alt">
-            <div class="project__inner" :class="project.bgName">
+          <a :href="project.link" class="project" v-for="project in projects" :key="project.id">
+            <div class="project__inner" :style="{backgroundImage: 'url(' + project.bg + ')' }">
+              <div class="project__mask"></div>
               <div class="project__circle-wrap">
                 <a :href="project.link" class="project__circle">
                   <img :src="require('../img/icons/internet.png')" alt />
@@ -96,95 +97,33 @@ export default {
       // ],
       projects: [
         {
-          name: "Boostfolia",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "boostfolia",
-          alt: "project-boostfolia",
+          name: "Weather Here",
+          github:
+            "https://github.com/oleoot/Weather-air-pollution-app-using-node.js",
+          link: "https://the-weather-here-app-nodejs.herokuapp.com/index.html",
+          bg: require("../img/projects/fullstack/weather-pollution/weather-pollution-bg.png"),
+          id: "5.1",
         },
         {
-          name: "Freehand",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-Freehand",
+          name: "Travel Log App",
+          github: "https://github.com/oleoot/Full-Stack-Travel-Log-App",
+          link: "https://travel-log-app.netlify.app/",
+          bg: require("../img/projects/fullstack/travel-log-app/travel-log-app-bg.png"),
+          id: "5.2",
         },
         {
-          name: "Snow",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "snow",
-          alt: "project-snow",
+          name: "Twitter Clone",
+          github: "https://github.com/oleoot/Twitter-clone-app",
+          link: "https://twitter-clone-website.netlify.app/",
+          bg: require("../img/projects/fullstack/twitter-clone/twitter-clone-bg.png"),
+          id: "5.3",
         },
         {
-          name: "Dance Tour",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "dance-tour",
-          alt: "project-dance",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
-        },
-        {
-          name: "Test",
-          github: "https://github.com/oleoot/Boostfolia",
-          link: "https://boostfolia.netlify.app/",
-          bgName: "freehand",
-          alt: "project-test",
+          name: "Chat Room",
+          github: "https://github.com/oleoot/Chat-room-app",
+          link: "https://chat-room-app-ok.herokuapp.com/",
+          bg: require("../img/projects/fullstack/chat-room/chat-room-bg.png"),
+          id: "5.4",
         },
       ],
     };
