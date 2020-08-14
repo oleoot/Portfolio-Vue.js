@@ -63,6 +63,7 @@
           :responsive="{
       1023: {
         items:3,
+         gutter:32
       },
       1441: {
         items: 4
