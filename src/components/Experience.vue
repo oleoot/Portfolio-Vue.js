@@ -3,7 +3,7 @@
     <div class="container">
       <div class="section-headline">
         <h2 class="section-headline__text">Опыт работы</h2>
-        <div>
+        <div class="reference__wrap">
           <a href="#" class="reference__link">Goodwine</a>
           <a href="#" class="reference__link">GFK</a>
         </div>

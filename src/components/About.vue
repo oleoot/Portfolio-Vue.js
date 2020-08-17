@@ -4,7 +4,7 @@
       <div class="section-headline">
         <h2 class="section-headline__text">Обо мне</h2>
         <div class="section-headline__icons">
-          <a href="#">
+          <a href="#" class="about__link">
             <svg
               enable-background="new 0 0 24 24"
               height="35"
@@ -19,7 +19,7 @@
               />
             </svg>
           </a>
-          <a href="#">
+          <a href="#" class="about__link">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="35"
@@ -33,7 +33,7 @@
               />
             </svg>
           </a>
-          <a href="#">
+          <a href="#" class="about__link">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="35"

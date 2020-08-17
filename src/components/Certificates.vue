@@ -3,7 +3,7 @@
     <div class="container">
       <div class="section-headline">
         <h2 class="section-headline__text">Сертификаты</h2>
-        <div>
+        <div class="reference__wrap">
           <a href="#" class="reference__link">ITEA</a>
         </div>
       </div>
