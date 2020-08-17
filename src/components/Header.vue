@@ -23,6 +23,11 @@
             <a :href="link.anchor" class="header__link">{{link.name}}</a>
           </li>
         </ul>
+        <div class="burger-menu" @click="toggleMenu" :class="{toggle: toggledMenu}">
+          <div class="burger-menu__line line-1"></div>
+          <div class="burger-menu__line line-2"></div>
+          <div class="burger-menu__line line-3"></div>
+        </div>
       </div>
     </div>
   </header>
@@ -31,6 +36,7 @@
 export default {
   data() {
     return {
+      toggledMenu: false,
       headerClass: "header",
       links: [
         { name: "Обо мне", anchor: "#about" },
@@ -51,6 +57,9 @@ export default {
       } else {
         this.headerClass = "header";
       }
+    },
+    toggleMenu() {
+      this.toggledMenu = !this.toggledMenu;
     },
   },
   mounted() {
