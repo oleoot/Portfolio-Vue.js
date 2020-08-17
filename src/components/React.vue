@@ -61,18 +61,29 @@
           :navContainer="'.react-slider-nav'"
           edgePadding="30"
           :responsive="{
-                  640: {
+       320: {
+        items:1.2,
+        gutter: 20
+      },
+            375: {
+        items:1.2,
+             gutter:20
+      },
+             640: {
         items:2,
+             gutter:32
       },
                 768: {
         items:2,
+             gutter:32
       },
-      1024: {
+      1280: {
         items:3,
          gutter:32
       },
       1441: {
-        items: 4
+        items: 4,
+        gutter: 40
       }
     }"
         >
