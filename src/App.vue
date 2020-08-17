@@ -14,6 +14,7 @@
     <Certificates />
     <Contact />
     <Footer />
+    <NavbarMobile />
   </div>
 </template>
 
@@ -32,6 +33,7 @@ import Fullstack from "./components/Fullstack";
 import Certificates from "./components/Certificates";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import NavbarMobile from "./components/NavbarMobile";
 export default {
   name: "App",
   components: {
@@ -49,6 +51,7 @@ export default {
     Certificates,
     Contact,
     Footer,
+    NavbarMobile,
   },
   data() {
     return {};

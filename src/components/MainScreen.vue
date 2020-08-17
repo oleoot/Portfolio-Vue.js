@@ -1,5 +1,5 @@
 <template>
-  <section class="main" id="main">
+  <section class="main" id="main" :style="{minHeight: windowHeight + 'px'}">
     <div class="container">
       <h1 class="main__headline">Я создаю потрясающие впечатления</h1>
       <p class="main__desc">Frontend Developer из Киева</p>
@@ -23,3 +23,12 @@
     </div>
   </section>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      windowHeight: window.innerHeight,
+    };
+  },
+};
+</script>

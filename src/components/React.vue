@@ -51,7 +51,12 @@
         <div class="slider__nav react-slider-nav">
           <div class="slider__nav-item"></div>
           <div class="slider__nav-item"></div>
-          <div class="slider__nav-item slider__nav-item_hidden"></div>
+          <div class="slider__nav-item slider__nav-item_hidden-big-desktop"></div>
+          <div class="slider__nav-item slider__nav-item_hidden-small-desktop"></div>
+          <div class="slider__nav-item slider__nav-item_hidden-mobile"></div>
+          <div class="slider__nav-item slider__nav-item_hidden-mobile"></div>
+          <div class="slider__nav-item slider__nav-item_hidden-mobile"></div>
+          <div class="slider__nav-item slider__nav-item_hidden-mobile"></div>
         </div>
         <tiny-slider
           :loop="false"

@@ -53,7 +53,15 @@
           <div class="slider__nav-item"></div>
           <div class="slider__nav-item"></div>
           <div class="slider__nav-item"></div>
-          <div class="slider__nav-item slider__nav-item_hidden"></div>
+          <div class="slider__nav-item slider__nav-item_hidden-big-desktop"></div>
+          <div class="slider__nav-item slider__nav-item_hidden-small-desktop"></div>
+          <div class="slider__nav-item slider__nav-item_hidden-small-desktop"></div>
+          <div class="slider__nav-item slider__nav-item_hidden-mobile"></div>
+          <div class="slider__nav-item slider__nav-item_hidden-mobile"></div>
+          <div class="slider__nav-item slider__nav-item_hidden-mobile"></div>
+          <div class="slider__nav-item slider__nav-item_hidden-mobile"></div>
+          <div class="slider__nav-item slider__nav-item_hidden-mobile"></div>
+          <div class="slider__nav-item slider__nav-item_hidden-mobile"></div>
         </div>
         <tiny-slider
           :loop="false"
@@ -69,7 +77,9 @@
       },
             375: {
         items:1.2,
-             gutter:20
+             gutter:20,
+             slideBy: 2,
+
       },
              640: {
         items:2,
