@@ -386,6 +386,10 @@ a {
     font-weight: 500;
     transition: 0.3s;
     border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 .contact__button:hover {
@@ -666,10 +670,6 @@ section {
     justify-content: center;
     align-items: center;
     margin-left: 10px;
-}
-
-.project__circle img {
-    width: 32px;
 }
 
 .project__name {
@@ -1088,7 +1088,7 @@ section {
         height: 50px;
     }
 
-    .project__circle img {
+    .project__circle svg {
         width: 30px;
     }
 

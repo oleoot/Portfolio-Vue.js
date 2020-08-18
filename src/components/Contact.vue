@@ -6,13 +6,25 @@
       </div>
       <div class="contact__inner">
         <div class="contact__pane">
-          <label for class="contact__label">Имя</label>
-          <input type="text" class="contact__input" />
-          <label for class="contact__label">E-mail</label>
-          <input type="email" class="contact__input" />
-          <label for class="contact__label">Сообщение</label>
-          <textarea name class="contact__textarea"></textarea>
-          <a href="#" class="contact__button">Отправить</a>
+          <form @submit.prevent="send">
+            <label class="contact__label" for="name">Имя</label>
+            <input type="text" class="contact__input" v-model="form_data.name" name="name" required />
+            <label class="contact__label" for="phone">Телефон</label>
+            <input
+              type="phone"
+              class="contact__input"
+              v-model="form_data.phone"
+              name="phone"
+              required
+            />
+            <label class="contact__label" for="message">Сообщение</label>
+            <textarea class="contact__textarea" v-model="form_data.message" name="message" required></textarea>
+            <button
+              :disabled="loading"
+              :style="{background: btnBg}"
+              class="contact__button"
+            >{{btnLabel}}</button>
+          </form>
         </div>
         <div class="contact__pane">
           <img :src="require('../img/icons/shape-2.png')" alt class="shape-5" />
@@ -98,3 +110,43 @@
     </div>
   </section>
 </template>
+
+
+<script>
+import axios from "axios";
+export default {
+  data() {
+    return {
+      btnLabel: "Отправить",
+      btnBg: "#146BE1",
+      loading: false,
+      form_data: {
+        name: "",
+        phone: "",
+        message: "",
+      },
+    };
+  },
+  methods: {
+    async send() {
+      try {
+        this.btnLabel = "Отправка...";
+        this.loading = true;
+        this.btnBg = "#146BE1";
+        const { data } = await axios.post(
+          "https://telegram-form.glitch.me/send-message",
+          this.form_data
+        );
+        console.log(data);
+        this.loading = false;
+        this.btnLabel = "Отправлено";
+        this.btnBg = "#5CB85C";
+      } catch (err) {
+        this.btnLabel = "Отправка не удалась";
+        this.loading = false;
+        console.log(err);
+      }
+    },
+  },
+};
+</script>
