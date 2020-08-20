@@ -4,7 +4,7 @@
       <div class="section-headline">
         <h2 class="section-headline__text">Обо мне</h2>
         <div class="section-headline__icons">
-          <a href="#" class="about__link">
+          <a :href="telegram" class="about__link" target="_blank">
             <svg
               enable-background="new 0 0 24 24"
               height="35"
@@ -19,7 +19,7 @@
               />
             </svg>
           </a>
-          <a href="#" class="about__link">
+          <a :href="github" class="about__link" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="35"
@@ -33,7 +33,7 @@
               />
             </svg>
           </a>
-          <a href="#" class="about__link">
+          <a :href="linkedin" class="about__link" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="35"
@@ -76,3 +76,14 @@
     </div>
   </section>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      telegram: "tg://resolve?domain=oleoot",
+      github: "https://github.com/oleoot",
+      linkedin: "https://www.linkedin.com/in/oleg-kouts/",
+    };
+  },
+};
+</script>

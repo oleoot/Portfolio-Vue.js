@@ -4,7 +4,7 @@
       <div class="section-headline">
         <h2 class="section-headline__text">Сертификаты</h2>
         <div class="reference__wrap">
-          <a href="#" class="reference__link">ITEA</a>
+          <a :href="itea" class="reference__link" target="_blank">ITEA</a>
         </div>
       </div>
       <div class="certificates__type-wrap">
@@ -21,3 +21,12 @@
     </div>
   </section>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      itea: "https://itea.ua/uk/",
+    };
+  },
+};
+</script>

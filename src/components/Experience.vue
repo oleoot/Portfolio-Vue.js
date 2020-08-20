@@ -4,8 +4,8 @@
       <div class="section-headline">
         <h2 class="section-headline__text">Опыт работы</h2>
         <div class="reference__wrap">
-          <a href="#" class="reference__link">Goodwine</a>
-          <a href="#" class="reference__link">GFK</a>
+          <a :href="goodwine" class="reference__link" target="_blank">Goodwine</a>
+          <a :href="gfk" class="reference__link" target="_blank">GFK</a>
         </div>
       </div>
       <div class="type-wrap">
@@ -37,3 +37,13 @@
     </div>
   </section>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      goodwine: "https://goodwine.com.ua/",
+      gfk: "https://www.askgfk.com.ua/index.php?id=7&no_cache=1",
+    };
+  },
+};
+</script>
