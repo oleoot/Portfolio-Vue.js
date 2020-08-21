@@ -11,7 +11,7 @@
         <div class="type-wrap__left">
           <div class="circle"></div>
           <div class="type-wrap__inner">
-            <img :src="require('../img/icons/shape-3.png')" alt class="shape shape-3" />
+            <img v-lazy="require('../img/icons/shape-3.png')" alt class="shape shape-3" />
             <h2 class="type-wrap__headline">Курсы web-разработки ITEA (HTML/CSS)</h2>
             <p class="type-wrap__date">16.10.2018–06.12.2018</p>
             <p
@@ -24,7 +24,7 @@
         <div class="type-wrap__right">
           <div class="circle"></div>
           <div class="type-wrap__inner">
-            <img :src="require('../img/icons/shape-4.png')" alt class="shape shape-4" />
+            <img v-lazy="require('../img/icons/shape-4.png')" alt class="shape shape-4" />
             <h2 class="type-wrap__headline">Курсы web - разработки ITEA (JS Base/JS Advanced)</h2>
             <p class="type-wrap__date">10.12.2018-08.02.2019</p>
             <p
@@ -37,6 +37,9 @@
   </section>
 </template>
 <script>
+import Vue from "vue";
+import VueLazyload from "vue-lazyload";
+Vue.use(VueLazyload);
 export default {
   data() {
     return {

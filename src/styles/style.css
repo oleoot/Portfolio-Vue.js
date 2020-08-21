@@ -651,6 +651,13 @@ section {
     }
 }
 
+.project__bg {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+}
+
 .project__mask {
     width: 100%;
     height: 100%;

@@ -27,7 +27,7 @@
           </form>
         </div>
         <div class="contact__pane">
-          <img :src="require('../img/icons/shape-2.png')" alt class="shape-5" />
+          <img v-lazy="require('../img/icons/shape-2.png')" alt class="shape-5" />
           <div class="contact__info-wrap">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -113,6 +113,9 @@
 
 
 <script>
+import Vue from "vue";
+import VueLazyload from "vue-lazyload";
+Vue.use(VueLazyload);
 import axios from "axios";
 export default {
   data() {

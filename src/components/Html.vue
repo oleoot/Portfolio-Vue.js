@@ -105,7 +105,9 @@
             :key="project.id"
             target="_blank"
           >
-            <div class="project__inner" :style="{backgroundImage: 'url(' + project.bg + ')' }">
+            <div class="project__inner">
+              <!-- :style="{backgroundImage: 'url(' + project.bg + ')' }" -->
+              <img v-lazy="project.bg" class="project__bg" />
               <div class="project__mask"></div>
               <div class="project__circle-wrap">
                 <a :href="project.link" class="project__circle" target="_blank">
@@ -144,6 +146,9 @@
 
 
 <script>
+import Vue from "vue";
+import VueLazyload from "vue-lazyload";
+Vue.use(VueLazyload);
 import VueTinySlider from "vue-tiny-slider";
 export default {
   components: {

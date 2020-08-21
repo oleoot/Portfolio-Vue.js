@@ -9,19 +9,26 @@
       </div>
       <div class="certificates__type-wrap">
         <div class="certificates__type">
-          <img :src="require('../img/certificates/html.png')" alt class="certificates__img" />
+          <img v-lazy="require('../img/certificates/html.png')" alt class="certificates__img" />
         </div>
         <div class="certificates__type">
-          <img :src="require('../img/certificates/js-base.png')" alt class="certificates__img" />
+          <img v-lazy="require('../img/certificates/js-base.png')" alt class="certificates__img" />
         </div>
         <div class="certificates__type">
-          <img :src="require('../img/certificates/js-advanced.png')" alt class="certificates__img" />
+          <img
+            v-lazy="require('../img/certificates/js-advanced.png')"
+            alt
+            class="certificates__img"
+          />
         </div>
       </div>
     </div>
   </section>
 </template>
 <script>
+import Vue from "vue";
+import VueLazyload from "vue-lazyload";
+Vue.use(VueLazyload);
 export default {
   data() {
     return {

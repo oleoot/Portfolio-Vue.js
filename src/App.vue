@@ -56,6 +56,15 @@ export default {
   data() {
     return {};
   },
+  // methods: {
+  //   loadElements() {
+  //     const projects = document.querySelectorAll(".project__inner");
+
+  //   },
+  // },
+  // mounted() {
+  //   document.addEventListener("scroll", this.loadElements);
+  // },
 };
 </script>
 <style scoped>
