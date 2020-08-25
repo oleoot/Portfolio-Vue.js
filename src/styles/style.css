@@ -208,6 +208,17 @@ a {
     background: rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     position: relative;
+    transform: translateY(50px);
+    /* height: 0; */
+    opacity: 0;
+    transition: 1.2s;
+    /* transition-delay: 0.5s; */
+}
+
+.about__animation {
+    /* height: 100%; */
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .about__info {
@@ -229,6 +240,18 @@ a {
 .about .section-headline__icons {
     display: flex;
     align-items: center;
+}
+
+.about__link {
+    cursor: pointer;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: 1s;
+}
+
+.about__link_animation {
+    opacity: 1;
+    transform: translateX(0px);
 }
 
 .about__link:not(:first-child) {

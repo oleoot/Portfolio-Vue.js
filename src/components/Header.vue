@@ -63,7 +63,6 @@ export default {
       const fromTop = window.pageYOffset;
       if (fromTop >= 100) {
         this.headerClass = "header header_bg";
-        console.log(fromTop);
       } else {
         this.headerClass = "header";
       }
