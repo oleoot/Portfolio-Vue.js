@@ -156,10 +156,6 @@ export default {
   },
   data() {
     return {
-      // icons: [
-      //   { webLink: "../img/icons/internet.png" },
-      //   { githubLink: "../img/icons/github.png" },
-      // ],
       projects: [
         {
           name: "Boostfolia",

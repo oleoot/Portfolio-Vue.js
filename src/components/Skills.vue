@@ -52,10 +52,8 @@ export default {
     };
   },
   methods: {
-    visibilityChanged(isVisible, entry) {
+    visibilityChanged(isVisible) {
       this.blockWrap = isVisible;
-      console.log(entry);
-      console.log(isVisible, this.blockWrap);
     },
   },
 };

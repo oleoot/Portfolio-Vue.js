@@ -37,7 +37,7 @@
         <div class="about__info-container" v-bind:class="{ about__animation: blockIsVisible }">
           <p class="about__number">1</p>
           <p class="about__info">
-            Frontend developer с 1+ годом опыта работы веб-разработки.
+            Frontend developer с 1+ годом опыта в веб-разработке.
             Основным направлением деятельности является создание сайтов на HTML/CSS с использованием JavaScript как ключевого инструмента в реализации проектов.
           </p>
         </div>
@@ -45,16 +45,18 @@
           <p class="about__number">2</p>
           <p class="about__info">
             Уверенно владею React.js, в том числе - react-hooks/context-api.
-            Ориентируюсь во Vue.js на базовом уровне.
-            <br />Знаком с принципами построения backend, для работы с которым применяю Node.js.
-            Данный опыт использовал в работе с различными базами данных (MongoDB, NeDB).
+            Ориентируюсь во Vue.js на начальном - среднем уровне.
+            Знаком с принципами построения backend, для работы с которым применяю Node.js.
+            Данный опыт использовал в работе с различными базами данных (Firebase, MongoDB, NeDB).
           </p>
         </div>
         <div class="about__info-container" v-bind:class="{ about__animation: blockIsVisible }">
           <p class="about__number">3</p>
-          <p
-            class="about__info"
-          >Для оптимизации Css применял препроцессор Sass, владею Git, уверенно работаю с командной строкой.Владею графическими редакторами Ps, Figma, Zeplin. Участвовал в реализации коммерческих проектов</p>
+          <p class="about__info">
+            Для оптимизации Css применял препроцессор Sass, методологию БЭМ. Владею Git, уверенно работаю с командной строкой.
+            Активно использую графические редакторы Ps, Figma, Zeplin.
+            Принимал участие в разработке и реализации нескольких проектов. В том числе в создании и внедрении проекта от А до Я.
+          </p>
         </div>
       </div>
     </div>

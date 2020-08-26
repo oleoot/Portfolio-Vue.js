@@ -436,6 +436,9 @@ a {
     gap: 30px;
     grid-gap: 30px;
     margin-top: 50px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
 }
 
 .certificates__type {
@@ -445,6 +448,11 @@ a {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+}
+
+.certificates__type_animation {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .certificates__img {

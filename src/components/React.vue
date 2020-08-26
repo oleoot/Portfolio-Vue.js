@@ -51,6 +51,7 @@
         <div class="slider__nav react-slider-nav">
           <div class="slider__nav-item"></div>
           <div class="slider__nav-item"></div>
+          <div class="slider__nav-item"></div>
           <div class="slider__nav-item slider__nav-item_hidden-big-desktop"></div>
           <div class="slider__nav-item slider__nav-item_hidden-small-desktop"></div>
           <div class="slider__nav-item slider__nav-item_hidden-mobile"></div>
@@ -168,6 +169,13 @@ export default {
           link: "https://hot-ones-souces.netlify.app/",
           bg: require("../img/projects/react/hot-ones-hot-sauces/hot-ones-hot-sauces-bg.png"),
           id: "3.2",
+        },
+        {
+          name: "Slack Clone",
+          github: "https://github.com/oleoot/Slack-Clone-React.js",
+          link: "https://slack-clone-website.netlify.app/",
+          bg: require("../img/projects/react/slack-clone/slack-clone-bg.png"),
+          id: "3.3",
         },
         {
           name: "Expense Tracker",
