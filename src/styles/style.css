@@ -282,6 +282,14 @@ a {
     padding: 20px;
     background: rgba(0, 0, 0, 0.15);
     border-radius: 10px;
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.skills__type_animation {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .skills__type-container_top {
@@ -317,6 +325,7 @@ a {
     background: var(--primary-color);
 }
 
+
 /* Experience/Education sections =============================================================================================================================================== */
 .type-wrap {
     display: grid;
@@ -347,6 +356,14 @@ a {
     border-radius: 20px;
     margin-top: -6px;
     position: relative;
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.type__inner_animation {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .type-wrap__headline {
@@ -625,7 +642,14 @@ section {
     color: var(--accent-color);
     font-size: 20px;
     font-weight: 500;
-    transition: 0.3s;
+    transition: 1s;
+    transform: translateX(20px);
+    opacity: 0;
+}
+
+.reference__link_animation {
+    opacity: 1;
+    transform: translateX(0px);
 }
 
 .reference__link:not(:first-child) {

@@ -5,7 +5,17 @@
         <h2 class="section-headline__text">Навыки</h2>
       </div>
       <div class="skills__type-wrap">
-        <div class="skills__type-container" v-for="skill in skills" :key="skill.name">
+        <div
+          class="skills__type-container"
+          v-for="skill in skills"
+          :key="skill.name"
+          v-observe-visibility="{
+  callback: visibilityChanged,
+  once: true,
+  threshold: 0.7
+}"
+          v-bind:class="{skills__type_animation: blockWrap }"
+        >
           <div class="skills__type-container_top">
             <p class="skills__name">{{skill.name}}</p>
             <p class="skills__percent">{{skill.percent}}</p>
@@ -21,9 +31,13 @@
 
 
 <script>
+import Vue from "vue";
+import { ObserveVisibility } from "vue-observe-visibility";
+Vue.directive("observe-visibility", ObserveVisibility);
 export default {
   data() {
     return {
+      blockWrap: true,
       skills: [
         { name: "Html/Css", percent: "90%" },
         { name: "JavaScript", percent: "70%" },
@@ -36,6 +50,13 @@ export default {
         { name: "Ps/Figma/Zeplin", percent: "90%" },
       ],
     };
+  },
+  methods: {
+    visibilityChanged(isVisible, entry) {
+      this.blockWrap = isVisible;
+      console.log(entry);
+      console.log(isVisible, this.blockWrap);
+    },
   },
 };
 </script>

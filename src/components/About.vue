@@ -11,10 +11,6 @@
             class="about__link"
             target="_blank"
             v-bind:class="{ about__link_animation: blockIsVisible }"
-            v-observe-visibility="{callback: visibilityChanged, intersection:{
-        threshold: 0.5,
-        once: true
-      }}"
           >
             <svg
               enable-background="new 0 0 24 24"
@@ -32,9 +28,11 @@
       </div>
       <div
         class="about__info-wrap"
-        v-observe-visibility="{callback: visibilityChanged, intersection:{
-        threshold: 0.5
-      }}"
+        v-observe-visibility="{
+  callback: visibilityChanged,
+  once: true,
+  threshold: 0.7
+}"
       >
         <div class="about__info-container" v-bind:class="{ about__animation: blockIsVisible }">
           <p class="about__number">1</p>
@@ -90,10 +88,8 @@ export default {
     };
   },
   methods: {
-    visibilityChanged(isVisible, entry) {
+    visibilityChanged(isVisible) {
       this.blockIsVisible = isVisible;
-      console.log(entry);
-      console.log(isVisible, this.blockIsVisible);
     },
   },
 };
