@@ -178,11 +178,11 @@ export default {
           id: "3.3",
         },
         {
-          name: "Expense Tracker",
-          github: "https://github.com/oleoot/Expense-tracker-on-React",
-          link: "https://expense-tracker-website.netlify.com/",
-          bg: require("../img/projects/react/expense-tracker/expense-tracker-bg.png"),
-          id: "3.3",
+          name: "Whatsapp Clone",
+          github: "https://github.com/oleoot/Whats-up-clone-react.js",
+          link: "https://whatsapp-clone-app.netlify.app/",
+          bg: require("../img/projects/react/whatsapp-clone/whatsapp-clone-bg.png"),
+          id: "3.4",
         },
         {
           name: "Reading List",

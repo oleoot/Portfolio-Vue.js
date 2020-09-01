@@ -174,10 +174,10 @@ export default {
           id: "5.3",
         },
         {
-          name: "Chat Room",
-          github: "https://github.com/oleoot/Chat-room-app",
-          link: "https://chat-room-app-ok.herokuapp.com/",
-          bg: require("../img/projects/fullstack/chat-room/chat-room-bg.png"),
+          name: "Expense Tracker",
+          github: "https://github.com/oleoot/Expense-tracker-on-React",
+          link: "https://expense-tracker-website.netlify.com/",
+          bg: require("../img/projects/fullstack/expense-tracker/expense-tracker-bg.png"),
           id: "5.4",
         },
         {
